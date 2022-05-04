@@ -1,11 +1,6 @@
 import java.util.ArrayList;
 
-public class Squad {
-    private String name;
-    private  String cause;
-    private int maxsize;
-    private static ArrayList<Squad>mInstances=new ArrayList<>();
-    private int id;
+
 
     public Squad(String name, String cause,int maxsize){
         this.name=name;
