@@ -63,3 +63,4 @@ public class Heros {
     public void deleteHero(){
         mInstance.remove(id-1);
     }
+}
