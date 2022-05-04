@@ -16,8 +16,6 @@ There are no known bugs at the moment
 ## Technologies Used
 Java
 
-Markdown
-
 CSS 
 
 Handlebars
