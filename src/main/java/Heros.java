@@ -8,6 +8,14 @@ public class Heros {
     private static ArrayList<Heros>mInstance= new ArrayList<Heros>();
     private int id;
     private String squadId;
+public class Heros {
+    private String name;
+    private int age;
+    private String power;
+    private String weakness;
+    private static ArrayList<Heros>mInstance= new ArrayList<Heros>();
+    private int id;
+    private String squadId;
 
 
     public Heros(String name,int age ,String power,String weakness,String squadId){
