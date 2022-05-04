@@ -8,6 +8,7 @@ public class Heros {
     private static ArrayList<Heros>mInstance= new ArrayList<Heros>();
     private int id;
     private String squadId;
+    
 public class Heros {
     private String name;
     private int age;
