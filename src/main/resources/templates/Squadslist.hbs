@@ -1,0 +1,18 @@
+{{#partial "header"}}
+
+{{/partial}}
+{{#partial "content"}}
+
+    <h1>Meet the Squads</h1>
+
+    {{#if Squads}}
+        {{#each Squads}}
+            <div class ="col-md-4 card">
+                <h3>Name:{{name}}</h3>
+                <p>Cause:{{cause}}</p>
+                <p>Maximum size:{{maxsize}}</p>
+            </div>
+
+{{/partial}}
+
+{{> layout.hbs}}

@@ -1,0 +1,57 @@
+body
+{
+   background-color:black;
+  color:blue;
+  font-family: 'Sigmar One', cursive;
+  text-decoration:none;
+
+
+
+}
+#starter
+{
+
+    display:flex;
+}
+img{
+    float:right;
+    height:150vh;
+    margin-top:0%;
+
+}
+nav{
+    display:flex;
+    float:right;
+    margin-left:30%;
+    margin-top:2%;
+
+}
+a{
+
+    text-decoration:none;
+}
+h1{
+
+    font-size:6em;
+    font-family: 'Sigmar One', cursive;
+    margin-top:10%;
+    text-shadow:yellow;
+
+}
+span{
+    color:yellow;
+    text-shadow:solid blue;
+}
+button{
+    background-color:yellow;
+    border-radius:50px;
+    float:right;
+    margin-left:7%;
+    width:300px;
+    font-weight:bold;
+    height:9vh;
+    color:blue;
+}
+h2{
+    margin-left:3%;
+}

@@ -1,0 +1,59 @@
+{{#partial "header"}}
+     <link rel='stylesheet'  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+                 <link rel='stylesheet' href='/app.css'>
+                 <link rel="preconnect" href="https://fonts.googleapis.com">
+                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                 <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+     <link rel='stylesheet' href='/form.css'>
+{{/partial}}
+
+
+{{#partial "content"}}
+ <div class ="container" id ="starter";>
+    <nav>
+
+         <h2><a href ='/heros/list'>Heros</a></h2>
+         <h2><a href ='/squad/list'>Squads</a></h2>
+         <button><a href="heroform.hbs"/><h3>Add Hero</h3></a></button>
+         <button><a href="Squadform.hbs"/><h3>Add Squad</h3></a></button>
+
+    </nav>
+ </div>
+ <div>
+ <img src ="/images/blue-removebg-preview.png" alt="spiderman">
+<form action="/heros/new" method = "POST">
+
+ <div class="form-group">
+   <label for="name">Hero name</label>
+   <input id="name" name="name" class="form-control" type="text">
+ </div>
+ <div class="form-group">
+   <label for="power">Super power</label>
+   <input id="power" name="power" class="form-control" type="text">
+ </div>
+ <div class="form-group">
+    <label for="weakness">Weakness</label>
+    <input id="weakness" name="weakness" class="form-control" type="text">
+  </div>
+  <div class="form-group">
+      <label for="age">Enter Age</label>
+      <input id="age" name="age" class="form-control" type="number">
+   </div>
+   <div class="form-group">
+       <label for="squadId">Squad</label>
+      <input id="squadId" name="squadId" class="form-control" type="text">
+   </div>
+       <br></br>
+
+     </div>
+ <button type="submit" class="btn">Add Hero</button>
+</form>
+</div>
+
+{{/partial}}
+
+{{#partial "footer"}}
+
+{{/partial}}
+{{> layout.hbs}}
+

@@ -1,0 +1,22 @@
+body
+{
+    font-family: 'Merienda', cursive;
+
+}
+h1{
+    font-family: 'Merienda', cursive;
+}
+#herosd{
+    display:flex;
+}
+.card{
+    border-radius:20px;
+    margin-left:2%;
+    box-shadow:3px 3px 3px blue;
+    color:black;
+    padding:2%;
+}
+h5{
+    border-bottom:2px solid black;
+    font-weight:bold;
+}

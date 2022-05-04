@@ -1,0 +1,50 @@
+
+
+   {{#partial "header"}}
+     <link rel='stylesheet'  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+                 <link rel='stylesheet' href='/app.css'>
+
+                 <link rel="preconnect" href="https://fonts.googleapis.com">
+                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                 <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+                 <link rel="preconnect" href="https://fonts.googleapis.com">
+                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                 <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Sigmar+One&display=swap" rel="stylesheet">
+                 <link rel='stylesheet' href='/heroform.css'>
+   {{/partial}}
+   {{#partial "content"}}
+    <div class ="container" id ="starter";>
+       <nav>
+
+         <h2><a href ='/heros/list'>Heros</a></h2>
+         <h2><a href ='/squad/list'>Squads</a></h2>
+         <button><a href="heroform.hbs"/><h3>Add Hero</h3></a></button>
+         <button><a href="Squadform.hbs"/><h3>Add Squad</h3></a></button>
+
+       </nav>
+       </div>
+         <h1>Meet the Squads</h1>
+       <div id="herosd">
+{{!--        <img src ="/images/blue-removebg-preview.png" alt="spiderman"> --}}
+
+
+       {{#if squad}}
+           {{#each squad}}
+            <div class="card text-dark bg-warning mb-3" style="max-width: 18rem;">
+
+                     <div class="card-body">
+                       <h5 class="card-title">{{name}}</h5>
+                       <p class="card-text">Cause:{{cause}} </p>
+                       <p class="card-text">Maximum size:{{maxsize}}</p>
+                       <p>A group of {{maxsize}} dedicated superheros who are commited to fighting crime and ensuring peace</p>
+                     </div>
+                   </div>
+           {{/each}}
+           {{else}}
+                    <P>No squads have been added!</p>
+       {{/if}}
+       </div>
+
+   {{/partial}}
+
+   {{> layout.hbs}}

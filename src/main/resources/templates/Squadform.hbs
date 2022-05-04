@@ -1,0 +1,56 @@
+{{#partial "header"}}
+ <link rel='stylesheet'  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+             <link rel='stylesheet' href='/app.css'>
+             <link rel="preconnect" href="https://fonts.googleapis.com">
+             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+             <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+              <link rel='stylesheet' href='/form.css'>
+{{/partial}}
+
+{{#partial "content"}}
+ <div class ="container" id ="starter";>
+    <nav>
+
+         <h2><a href ='/heros/list'>Heros</a></h2>
+         <h2><a href ='/squad/list'>Squads</a></h2>
+         <button><a href="heroform.hbs"/><h3>Add Hero</h3></a></button>
+         <button><a href="Squadform.hbs"/><h3>Add Squad</h3></a></button>
+
+    </nav>
+ </div>
+ <div>
+ <img src ="/images/blue-removebg-preview.png" alt="spiderman">
+<form action="/squads/new" method="POST">
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label for="name" class="col-form-label" >Squad Name</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="name" name="name" class="form-control" >
+  </div>
+  <br></br>
+  <div class="col-auto">
+    <label for="cause" class="col-form-label" >Squad Cause</label>
+  </div>
+  <div class="col-auto">
+     <input type="text" id="cause" name="cause" class="form-control" >
+  </div>
+  <br></br>
+  <div class="col-auto">
+      <label for="maxsize" class="col-form-label" >Maximum size</label>
+    </div>
+    <div class="col-auto">
+      <input type="number" id="maxsize" name="maxsize" class="form-control" >
+    </div>
+    <br></br>
+
+
+    <button type="submit" class="btn">Add Squad</button>
+</div>
+</form>
+</div>
+{{/partial}}
+{{#partial "footer"}}
+
+{{/partial}}
+{{> layout.hbs}}
