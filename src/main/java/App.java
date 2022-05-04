@@ -73,20 +73,7 @@ public class App {
             return new ModelAndView(model, "Squadform.hbs");
         }, new HandlebarsTemplateEngine());
 
-        post("/squads/new", (request, response) -> {
-            Map<String, Object> model = new HashMap<String, Object>();
-            String name = request.queryParams("name");
-            String cause = request.queryParams("cause");
-            int maxsize = Integer.parseInt(request.queryParams("maxsize"));
-            Squad squad = new Squad(name,cause,maxsize);
-            model.put("squad" ,squad);
-            return new ModelAndView(model, "Squadsuccess.hbs");
-        }, new HandlebarsTemplateEngine());
-
-    }
-
-}
-
+      
 
 
 
