@@ -41,4 +41,4 @@ public class Squad {
 
         return mInstances.get(id -1);
     }
-
+}
